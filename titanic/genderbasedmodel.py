@@ -14,8 +14,8 @@ data = np.array(data)
 
 percentage_total_who_survived = np.sum(data[0::, 1].astype(np.float)) / np.size(data[0::, 1].astype(np.float))
 
-women_only_stats = data[0::, 3] == 'female'
-men_only_stats = data[0::, 3] != 'female'
+women_only_stats = data[0::, 4] == 'female'
+men_only_stats = data[0::, 4] != 'female'
 
 percentage_women_who_survived = np.sum(data[women_only_stats, 1].astype(np.float)) / np.size(data[women_only_stats, 1].astype(np.float)) 
 
